@@ -1,28 +1,28 @@
 <template>
   <div class="shop-online-child">
-    <ShopOnlineItem itemName="MACARONS" itemNameJp="マカロン" :image="macaronIcon" />
-    <ShopOnlineItem itemName="CHOCOLATS" itemNameJp="ショコラ" :image="chocolatsIcon"/>
-    <ShopOnlineItem itemName="SABLES&CAKES" itemNameJp="焼き菓子" :image="sablesIcon"/>
-    <ShopOnlineItem itemName="ICE CREAM" itemNameJp="アイスクリーム" :image="icecreamIcon"/>
-    <ShopOnlineItem itemName="GIFT SET" itemNameJp="詰合せギフトセット" :image="giftIcon"/>
-    <ShopOnlineItem itemName="OTHERS" itemNameJp="その他" :image="othersIcon"/>
-    <ShopOnlineItem itemName="AOYAMA" itemNameJp="ケーキのご予約" :image="aoyamaIcon"/>
+    <Item itemName="MACARONS" itemNameJp="マカロン" :image="macaronIcon" />
+    <Item itemName="CHOCOLATS" itemNameJp="ショコラ" :image="chocolatsIcon"/>
+    <Item itemName="SABLES&CAKES" itemNameJp="焼き菓子" :image="sablesIcon"/>
+    <Item itemName="ICE CREAM" itemNameJp="アイスクリーム" :image="icecreamIcon"/>
+    <Item itemName="GIFT SET" itemNameJp="詰合せギフトセット" :image="giftIcon"/>
+    <Item itemName="OTHERS" itemNameJp="その他" :image="othersIcon"/>
+    <Item itemName="AOYAMA" itemNameJp="ケーキのご予約" :image="aoyamaIcon"/>
   </div>
 </template>
 
 <script>
-import ShopOnlineItem from '@/components/atoms/ShopOnlineItem.vue'
-import MacaronIcon from '@/assets/header/macarons.jpg'
-import ChocolatsIcon from '@/assets/header/chocolats.jpg'
-import SablesIcon from '@/assets/header/sables_cakes.jpg'
-import IcecreamIcon from '@/assets/header/icecream_menu.jpg'
-import GiftIcon from '@/assets/header/gift_menu.jpg'
-import OthersIcon from '@/assets/header/others.jpg'
-import AoyamaIcon from '@/assets/header/aoyama.jpg'
+import Item from '@/components/atoms/Item.vue'
+import MacaronIcon from '@/assets/item/macarons.jpg'
+import ChocolatsIcon from '@/assets/item/chocolats.jpg'
+import SablesIcon from '@/assets/item/sables_cakes.jpg'
+import IcecreamIcon from '@/assets/item/icecream_menu.jpg'
+import GiftIcon from '@/assets/item/gift_menu.jpg'
+import OthersIcon from '@/assets/item/others.jpg'
+import AoyamaIcon from '@/assets/item/aoyama.jpg'
 export default {
   name: 'ShopOnlineChild',
   components: {
-    ShopOnlineItem
+    Item
   },
   computed: {
     macaronIcon () { return MacaronIcon },

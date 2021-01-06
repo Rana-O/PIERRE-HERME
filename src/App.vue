@@ -1,18 +1,20 @@
 <template>
   <div id="page">
-    <header/>
     <Header/>
+    <Category />
     <img alt="logo" src="./assets/hero/top_fraise-pistache-2020_pc.jpg">
   </div>
 </template>
 
 <script>
 import Header from '@/components/organisms/Header.vue'
+import Category from '@/components/organisms/Category.vue'
 
 export default {
   name: 'Page',
   components: {
     Header,
+    Category
   }
 }
 </script>
