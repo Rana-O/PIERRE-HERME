@@ -20,5 +20,8 @@ export default {
 <style scoped>
   .category {
     position: relative;
+    background-color: white;
+    width: 95%;
+    margin: 0 auto;
   }
 </style>

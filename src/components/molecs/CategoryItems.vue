@@ -53,5 +53,8 @@ export default {
 </script>
 
 <style scoped>
-
+  .category-items {
+  display: flex;
+  flex-wrap: wrap;
+}
 </style>

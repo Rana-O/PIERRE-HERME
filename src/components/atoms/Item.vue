@@ -23,9 +23,12 @@ export default {
 
 <style scoped>
   .item {
+    font-size: 10px;
     border-bottom: 1px solid #f1f0f5;
     display: flex;
+    justify-content: center;
     width: calc(100%/4);
+    margin-bottom: 20px;
   }
   .item .item-image {
     width: 66px;

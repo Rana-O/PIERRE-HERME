@@ -87,6 +87,7 @@ export default {
   width: 100%;
   top: 60px;
   right: 0;
+  z-index: 1;
   background-color: white;
   justify-content: center;
   list-style: none;
