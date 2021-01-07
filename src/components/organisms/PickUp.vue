@@ -1,24 +1,21 @@
 <template>
-  <div id="category">
-    <Title title="CATEGORY"/>
-    <CategoryItems />
+  <div id="pick-up">
+    <Title title="PICK UP" />
   </div>
 </template>
 
 <script>
 import Title from '@/components/atoms/Title.vue'
-import CategoryItems from '@/components/molecs/CategoryItems.vue'
 export default {
-  name: 'Category',
+  name: 'PickUp',
   components: {
-    Title,
-    CategoryItems
+    Title
   }
 }
 </script>
 
 <style scoped>
-  #category {
+  #pick-up {
     position: relative;
     background-color: white;
     width: 95%;
