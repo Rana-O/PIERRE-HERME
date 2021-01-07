@@ -6,7 +6,7 @@
     <Item itemName="CONFITURE" itemNameJp="ジャム" :image="confitureIcon" />
     <Item itemName="CHOCOLATS" itemNameJp="ショコラ" :image="chocolatIcon" />
     <Item itemName="VENNOISERIES" itemNameJp="菓子パン" :image="viennoiserieIcon" />
-    <Item itemName="PUOND CAKES" itemNameJp="焼き菓子" :image="poundcakeIcon" />
+    <Item itemName="POUND CAKES" itemNameJp="焼き菓子" :image="poundcakeIcon" />
     <Item itemName="ICE CREAM" itemNameJp="アイスクリーム" :image="icecreamIcon" />
     <Item itemName="SABLES" itemNameJp="サブレ・クッキー" :image="sableIcon" />
     <Item itemName="GIFT SET" itemNameJp="詰合せギフトセット" :image="giftIcon" />
