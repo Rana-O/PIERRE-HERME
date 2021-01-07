@@ -1,10 +1,10 @@
 <template>
   <ul class="nav-child">
     <li>
-      <a>{{ child_first }}</a>
+      <a>{{ childFirst }}</a>
     </li>
     <li>
-      <a>{{ child_second }}</a>
+      <a>{{ childSecond }}</a>
     </li>
   </ul>
 </template>
@@ -13,8 +13,8 @@
 export default {
   name: 'NavChild',
   props: [
-    'child_first',
-    'child_second'
+    'childFirst',
+    'childSecond'
   ]
 }
 </script>

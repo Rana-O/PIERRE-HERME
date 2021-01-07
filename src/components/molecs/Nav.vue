@@ -9,13 +9,13 @@
     <li class="nav-child-container">
       <NavItem navItem="OUR BRAND" navItem_jp="ピエール・エルメについて">
         <div class="nav-child">
-          <NavChild child_first="ピエール・エルメについて" child_second="ブランドヒストリー"/>
+          <NavChild childFirst="ピエール・エルメについて" childSecond="ブランドヒストリー"/>
         </div>
       </NavItem>
     <li class="nav-child-container">
       <NavItem navItem="BOUTIQUES" navItem_jp="店舗検索">
         <div class="nav-child">
-          <NavChild child_first="国内ブティック一覧" child_second="海外ブティック一覧" />
+          <NavChild childFirst="国内ブティック一覧" childSecond="海外ブティック一覧" />
         </div>
       </NavItem>
     </li>

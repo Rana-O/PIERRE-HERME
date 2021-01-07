@@ -1,5 +1,5 @@
 <template>
-<div id="guide">
+<div class="guide">
   <font-awesome-icon class="font-awesome" :icon="iconClassName"></font-awesome-icon>
   <a>{{ title }}</a>
 </div>
@@ -21,10 +21,10 @@ export default {
 </script>
 
 <style scoped>
-  #guide {
+  .guide {
     margin: 12px 10px;
   }
-  #guide a {
+  .guide a {
     margin-left: 8px;
   }
   .font-awesome {
