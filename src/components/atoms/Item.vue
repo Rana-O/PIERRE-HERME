@@ -1,5 +1,5 @@
 <template>
-  <div class="shop-online-item">
+  <div class="item">
     <div class="item-image">
       <img :src="image">
     </div>
@@ -12,7 +12,7 @@
 
 <script>
 export default {
-  name: 'ShopOnlineItem',
+  name: 'Item',
   props: [
     'itemName',
     'itemNameJp',
@@ -22,15 +22,18 @@ export default {
 </script>
 
 <style scoped>
-  .shop-online-item {
+  .item {
+    font-size: 10px;
     border-bottom: 1px solid #f1f0f5;
     display: flex;
+    justify-content: center;
     width: calc(100%/4);
+    margin-bottom: 20px;
   }
-  .shop-online-item .item-image {
+  .item .item-image {
     width: 66px;
   }
-  .shop-online-item .item-image img {
+  .item .item-image img {
     max-width: 100%;
     height: auto;
   }
