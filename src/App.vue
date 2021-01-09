@@ -4,6 +4,7 @@
       <Header/>
       <Category />
       <PickUp />
+      <Recommend />
       <img alt="logo" src="./assets/hero/top_fraise-pistache-2020_pc.jpg">
     </div>
   </div>
@@ -13,13 +14,15 @@
 import Header from '@/components/organisms/Header.vue'
 import Category from '@/components/organisms/Category.vue'
 import PickUp from '@/components/organisms/PickUp.vue'
+import Recommend from '@/components/organisms/Recommend.vue'
 
 export default {
   name: 'Page',
   components: {
     Header,
     Category,
-    PickUp
+    PickUp,
+    Recommend
   }
 }
 </script>

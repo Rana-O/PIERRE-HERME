@@ -1,5 +1,5 @@
 <template>
-  <div class="recommend-text"></div>
+  <div class="recommend-text">レコメンドテキスト</div>
 </template>
 
 <script>

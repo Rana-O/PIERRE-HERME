@@ -1,5 +1,5 @@
 <template>
-  <div class="recommend-image"></div>
+  <div class="recommend-image">レコメンドイメージ</div>
 </template>
 
 <script>
