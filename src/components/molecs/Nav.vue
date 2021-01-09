@@ -92,6 +92,7 @@ export default {
   justify-content: center;
   list-style: none;
   margin: 0;
+  z-index: 1;
 
 }
 .nav-child-container:hover .shop-online-child-container {

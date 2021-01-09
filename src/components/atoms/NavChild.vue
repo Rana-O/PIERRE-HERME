@@ -20,6 +20,9 @@ export default {
 </script>
 
 <style scoped>
+.nav-child {
+  z-index: 1;
+}
 .nav-child li{
   margin: 20px 0;
   width: 27%;

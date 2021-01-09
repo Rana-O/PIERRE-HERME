@@ -44,7 +44,7 @@ export default {
     position: relative;
     background-color: white;
     width: 95%;
-    margin: 0 auto;
+    margin: 0px auto;
     display: flex;
     flex-wrap: wrap;
   }
