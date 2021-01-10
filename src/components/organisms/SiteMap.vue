@@ -1,18 +1,34 @@
 <template>
   <div id="site-map">
     <div class="site-map-container">
-      <SiteMapTitle title="SHOP ONLINE" />
+      <ShopOnline />
+      <ShoppingGuide />
+      <Feature />
+      <OurBrand />
+      <AboutUs />
+      <Boutiques />
     </div>
   </div>
 </template>
 
 <script>
-import SiteMapTitle from '@/components/atoms/SiteMapTitle.vue'
+import ShopOnline from '@/components/organisms/ShopOnline.vue'
+import ShoppingGuide from '@/components/organisms/ShoppingGuide.vue'
+import Feature from '@/components/organisms/Feature.vue'
+import OurBrand from '@/components/organisms/OurBrand.vue'
+import AboutUs from '@/components/organisms/AboutUs.vue'
+import Boutiques from '@/components/organisms/Boutiques.vue'
 export default {
   name: 'SiteMap',
   components: {
-    SiteMapTitle
+    ShopOnline,
+    ShoppingGuide,
+    Feature,
+    OurBrand,
+    AboutUs,
+    Boutiques
   }
+
 }
 </script>
 

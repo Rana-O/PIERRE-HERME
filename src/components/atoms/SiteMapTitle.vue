@@ -1,6 +1,5 @@
 <template>
   <div class="site-map-title">
-    サイトマップタイトル
     <h1>{{ title }}</h1>
   </div>
 </template>
