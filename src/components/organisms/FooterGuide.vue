@@ -27,6 +27,7 @@ export default {
     font-size: 14px;
   }
   .font-awesome {
+    color: black;
     width: 20px;
     height: 20px;
   }

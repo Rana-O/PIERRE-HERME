@@ -22,5 +22,6 @@ export default {
   #footer {
     background-color:#646466;
     color: white;
+    font-size: 14px;
   }
 </style>
