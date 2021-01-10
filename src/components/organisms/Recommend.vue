@@ -2,21 +2,21 @@
   <div id="recommend">
     <Title title="Recommend" />
     <RecommendItems />
-    <Button />
+    <ArrowButton />
   </div>
 </template>
 
 <script>
 import RecommendItems from '@/components/organisms/RecommendItems.vue'
 import Title from '@/components/atoms/Title.vue'
-import Button from '@/components/atoms/Button.vue'
+import ArrowButton from '@/components/atoms/ArrowButton.vue'
 
 export default {
   name: 'Recommend',
   components: {
     RecommendItems,
     Title,
-    Button
+    ArrowButton
   }
 }
 </script>
