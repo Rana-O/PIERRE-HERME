@@ -3,6 +3,7 @@
     <div id="page-container">
       <Header/>
       <Category />
+      <PickUp />
       <img alt="logo" src="./assets/hero/top_fraise-pistache-2020_pc.jpg">
     </div>
   </div>
@@ -11,12 +12,14 @@
 <script>
 import Header from '@/components/organisms/Header.vue'
 import Category from '@/components/organisms/Category.vue'
+import PickUp from '@/components/organisms/PickUp.vue'
 
 export default {
   name: 'Page',
   components: {
     Header,
-    Category
+    Category,
+    PickUp
   }
 }
 </script>
