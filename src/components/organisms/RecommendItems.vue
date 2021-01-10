@@ -16,7 +16,7 @@
       <RecommendItem :recommendImage="icon5" name="サブレ イスパハン" price="¥1,620" />
     </div>
     <div class="recommend-item-container">
-      <RecommendItem :recommendImage="icon6" name="キャレ ショコラ オ レ エルメ" price="¥2,70" />
+      <RecommendItem :recommendImage="icon6" name="キャレ ショコラ オ レ エルメ" price="¥2,700" />
     </div>
     <div class="recommend-item-container">
       <RecommendItem :recommendImage="icon7" name="キャレ ショコラ ノワール" price="¥2,700" />
