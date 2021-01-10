@@ -1,5 +1,5 @@
 <template>
-  <div class="recommend-item">レコメンドアイテム
+  <div class="recommend-item">
     <RecommendImage :recommendImage="recommendImage" />
     <RecommendText :name="name" :price="price" />
   </div>
@@ -24,5 +24,8 @@ export default {
 </script>
 
 <style scoped>
-
+  .recommend-item {
+    width: 260px;
+    padding: 12px;
+  }
 </style>

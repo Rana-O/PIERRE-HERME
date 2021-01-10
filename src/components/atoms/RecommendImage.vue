@@ -14,5 +14,7 @@ export default {
 </script>
 
 <style scoped>
-
+  .recommend-image img {
+    width: 260px;
+  }
 </style>

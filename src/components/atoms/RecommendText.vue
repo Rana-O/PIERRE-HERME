@@ -17,5 +17,9 @@ export default {
 </script>
 
 <style scoped>
-
+  .recommend-text {
+    color: black;
+    font-size: 14px;
+    text-align: left;
+  }
 </style>

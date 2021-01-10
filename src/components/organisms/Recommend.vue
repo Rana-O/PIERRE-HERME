@@ -19,5 +19,10 @@ export default {
 </script>
 
 <style scoped>
-
+  #recommend {
+    width: 95%;
+    margin: 0 auto;
+    position: relative;
+    background-color: white;
+  }
 </style>
