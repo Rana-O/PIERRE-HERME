@@ -1,6 +1,6 @@
 <template>
   <div class="journal-item">
-    <JournalImage :journalImage="journalImage"/>
+    <JournalImage :image="image"/>
     <JournalText :title="title" :date="date" />
   </div>
 </template>
@@ -16,7 +16,7 @@ export default {
     JournalText
   },
   props: [
-    'journalImage',
+    'image',
     'title',
     'date'
   ]

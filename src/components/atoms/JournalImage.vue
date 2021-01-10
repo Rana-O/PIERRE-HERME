@@ -1,6 +1,6 @@
 <template>
   <div class="journal-image">
-    <img :src="journalImage">
+    <img :src="image">
   </div>
 </template>
 
@@ -8,7 +8,7 @@
 export default {
   name: 'JournalImage',
   props: [
-    'journalImage'
+    'image'
   ]
 }
 </script>
