@@ -7,7 +7,7 @@
 
 <script>
 import Title from '@/components/atoms/Title.vue'
-import CategoryItems from '@/components/molecs/CategoryItems.vue'
+import CategoryItems from '@/components/organisms/CategoryItems.vue'
 export default {
   name: 'Category',
   components: {
