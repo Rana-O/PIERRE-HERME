@@ -1,7 +1,7 @@
 <template>
   <div class="recommend-item">レコメンドアイテム
-    <RecommendImage />
-    <RecommendText />
+    <RecommendImage :recommendImage="recommendImage" />
+    <RecommendText :name="name" :price="price" />
   </div>
 </template>
 
@@ -14,7 +14,12 @@ export default {
   components: {
     RecommendImage,
     RecommendText
-  }
+  },
+  props: [
+    'recommendImage',
+    'name',
+    'price'
+  ]
 }
 </script>
 

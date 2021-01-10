@@ -1,10 +1,15 @@
 <template>
-  <div class="recommend-image">レコメンドイメージ</div>
+  <div class="recommend-image" >
+    <img :src="recommendImage">
+  </div>
 </template>
 
 <script>
 export default {
-  name: 'RecommendImage'
+  name: 'RecommendImage',
+  props: [
+    'recommendImage'
+  ]
 }
 </script>
 
