@@ -30,6 +30,7 @@ export default {
   .journal-title {
     font-size: 30px;
     line-height: 1em;
+    padding: 50px 0;
     font-family: "adobe-caslon-pro","Yu Mincho",YuMincho,"HG明朝E","ＭＳ Ｐ明朝","ＭＳ 明朝",seri
   }
   .journal-title span {

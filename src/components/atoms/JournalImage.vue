@@ -14,5 +14,10 @@ export default {
 </script>
 
 <style scoped>
-
+  .journal-image {
+    margin: auto;
+  }
+  .journal-image img {
+    width: 480px;
+  }
 </style>

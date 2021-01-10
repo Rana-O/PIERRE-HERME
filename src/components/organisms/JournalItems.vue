@@ -1,16 +1,16 @@
 <template>
   <div id="journal-items">
     <div class="journal-item-container">
-      <JournalItem :journalImage="journal1" />
+      <JournalItem :journalImage="journal1" title="Saint Valentin 2021" date="2021/01/05" />
     </div>
     <div class="journal-item-container">
-      <JournalItem :journalImage="journal2" />
+      <JournalItem :journalImage="journal2" title="1月のマカロンフレーバー" date="2020/12/28" />
     </div>
     <div class="journal-item-container">
-      <JournalItem :journalImage="journal3" />
+      <JournalItem :journalImage="journal3" title="WIND AND SEA 別注のマカロンを数量限定で販売いたします" date="2020/12/17" />
     </div>
     <div class="journal-item-container">
-      <JournalItem :journalImage="journal4" />
+      <JournalItem :journalImage="journal4" title="12月のマカロンフレーバー" date="2020/12/01" />
     </div>
   </div>
 </template>
@@ -37,5 +37,11 @@ export default {
 </script>
 
 <style scoped>
-
+  #journal-items {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .journal-item-container {
+    width: 50%;
+  }
 </style>
