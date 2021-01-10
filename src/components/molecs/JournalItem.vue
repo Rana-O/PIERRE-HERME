@@ -1,6 +1,6 @@
 <template>
   <div class="journal-item">ジャーナルアイテム
-    <JournalImage />
+    <JournalImage :journalImage="journalImage"/>
     <JournalText />
   </div>
 </template>
@@ -14,7 +14,10 @@ export default {
   components: {
     JournalImage,
     JournalText
-  }
+  },
+  props: [
+    'journalImage'
+  ]
 }
 </script>
 
