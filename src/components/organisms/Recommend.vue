@@ -2,7 +2,7 @@
   <div id="recommend">
     <Title title="Recommend" />
     <RecommendItems />
-    <ArrowButton />
+    <ArrowButton buttonName="MORE" />
   </div>
 </template>
 

@@ -1,7 +1,7 @@
 <template>
   <div class="button">
     <a>
-      <span>MORE</span>
+      <span>{{ buttonName }}</span>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5.14194 5.9374">
         <polygon points="5.142 2.969 2.571 4.453 0 5.937 0 2.969 0 0 2.571 1.484 5.142 2.969" class="-buttonArrow"></polygon>
       </svg>
@@ -11,7 +11,10 @@
 
 <script>
 export default {
-  name:'Button'
+  name:'Button',
+  props: [
+    'buttonName'
+  ]
 }
 </script>
 
