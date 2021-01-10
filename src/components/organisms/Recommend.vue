@@ -1,5 +1,5 @@
 <template>
-  <div id="recommend">レコメンド
+  <div id="recommend">
     <Title title="Recommend" />
     <RecommendItems />
     <Button />
