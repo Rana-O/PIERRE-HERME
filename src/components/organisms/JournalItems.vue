@@ -1,10 +1,16 @@
 <template>
-  <div id="journal-items"></div>
+  <div id="journal-items">ジャーナルアイテムズ
+    <JournalItem />
+  </div>
 </template>
 
 <script>
+import JournalItem from '@/components/molecs/JournalItem.vue'
 export default {
-  name:'JournalItems'
+  name:'JournalItems',
+  components: {
+    JournalItem
+  }
 }
 </script>
 

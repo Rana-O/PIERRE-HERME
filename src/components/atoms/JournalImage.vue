@@ -1,5 +1,5 @@
 <template>
-  <div class="journal-image"></div>
+  <div class="journal-image">ジャーナルイメージ</div>
 </template>
 
 <script>
