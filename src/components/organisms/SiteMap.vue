@@ -36,5 +36,7 @@ export default {
   .site-map-container {
     width: 90%;
     margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
   }
 </style>

@@ -38,9 +38,14 @@ export default {
 </script>
 
 <style scoped>
+  #boutiques {
+    width: 100%;
+    margin: 20px 0;
+  }
   #boutiques a {
     color: white;
     display: block;
+    text-decoration: none;
   }
   .site-map-columns {
     display: flex;

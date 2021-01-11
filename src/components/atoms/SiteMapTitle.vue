@@ -18,5 +18,6 @@ export default {
     font-size: 14px;
     letter-spacing: 1px;
     border-bottom: 2px solid white;
+    margin: 0 10px 10px 10px;
   }
 </style>

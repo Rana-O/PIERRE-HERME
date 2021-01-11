@@ -1,6 +1,6 @@
 <template>
   <div id="feature">
-    <SiteMapTitle title="SITE MAP" />
+    <SiteMapTitle title="FEATURE" />
   </div>
 </template>
 
@@ -15,5 +15,8 @@ export default {
 </script>
 
 <style scoped>
-
+  #feature {
+    width: calc((100%/3)*2);
+    margin: 20px 0;
+  }
 </style>
