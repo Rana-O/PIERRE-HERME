@@ -1,5 +1,5 @@
 <template>
-  <div class="footer-nav">フッタナブ</div>
+  <div id="footer-nav">フッタナブ</div>
 </template>
 
 <script>

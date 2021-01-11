@@ -1,5 +1,5 @@
 <template>
-  <div class="sns-buttons">SNSボタンズ
+  <div id="sns-buttons">SNSボタンズ
     <SnsButton />
   </div>
 </template>
