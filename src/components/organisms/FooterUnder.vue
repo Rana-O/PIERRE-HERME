@@ -1,7 +1,7 @@
 <template>
   <div id="footer-under">
     <div class="button-container">
-      <Button />
+      <Button name="FRENCH SITE"/>
     </div>
     <div class="sns-buttons-container">
       <SnsButtons />
