@@ -4,12 +4,13 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { faQuestionCircle } from '@fortawesome/free-solid-svg-icons'
 import { faShoppingBag } from '@fortawesome/free-solid-svg-icons'
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons'
+import { faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 library.add(faQuestionCircle)
 library.add(faShoppingBag)
 library.add(faArrowUp)
-
+library.add(faTwitter)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 Vue.config.productionTip = false
 

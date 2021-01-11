@@ -1,6 +1,8 @@
 <template>
   <div id="sns-buttons">SNSボタンズ
     <SnsButton />
+    <font-awesome-icon class="font-awesome" icon="arrow-up"></font-awesome-icon>
+    <font-awesome-icon class="font-awesome" icon="twitter"></font-awesome-icon>
   </div>
 </template>
 

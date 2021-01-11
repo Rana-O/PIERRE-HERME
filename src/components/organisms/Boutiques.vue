@@ -5,7 +5,7 @@
       <div class="columns-br">
         <a href="#">TOKYO AOYAMA</a>
         <a href="#">Heaven</a>
-        <a href="#">ホテルニューオータニ</a>
+        <a href="#">hoge</a>
         <a href="#">ザ・リッツ・カールトン京都</a>
         <a href="#">パーク ハイアット ニセコ HANAZONO</a>
       </div>
