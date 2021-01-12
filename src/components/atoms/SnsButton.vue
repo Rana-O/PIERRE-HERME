@@ -1,14 +1,17 @@
 <template>
   <div class="sns-button">
     <a href="#">
-      hoge
+      <font-awesome-icon class="font-awesome" :icon="icon"></font-awesome-icon>
     </a>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'SnsButton'
+  name: 'SnsButton',
+  props: [
+    'icon'
+  ]
 }
 </script>
 
@@ -23,5 +26,12 @@ export default {
     text-decoration: none;
     text-align: center;
     border-radius: 50%;
+    margin-left: 10px;
+  }
+  .font-awesome {
+    height: 20px;
+    margin: auto;
+    width: 20px;
+    padding-top: 10px;
   }
 </style>
