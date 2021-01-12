@@ -1,17 +1,6 @@
 <template>
   <div class="category-items">
-    <Item itemName="MACARONS" itemNameJp="マカロン" :image="macaronIcon" />
-    <Item itemName="TEA&DRINKS" itemNameJp="紅茶・飲物" :image="drinkIcon" />
-    <Item itemName="PATISSERIES" itemNameJp="パティスリー" :image="patisserieIcon" />
-    <Item itemName="CONFITURE" itemNameJp="ジャム" :image="confitureIcon" />
-    <Item itemName="CHOCOLATS" itemNameJp="ショコラ" :image="chocolatIcon" />
-    <Item itemName="VENNOISERIES" itemNameJp="菓子パン" :image="viennoiserieIcon" />
-    <Item itemName="POUND CAKES" itemNameJp="焼き菓子" :image="poundcakeIcon" />
-    <Item itemName="ICE CREAM" itemNameJp="アイスクリーム" :image="icecreamIcon" />
-    <Item itemName="SABLES" itemNameJp="サブレ・クッキー" :image="sableIcon" />
-    <Item itemName="GIFT SET" itemNameJp="詰合せギフトセット" :image="giftIcon" />
-    <Item itemName="CONFECTION" itemNameJp="キャンディー菓子" :image="confectionIcon" />
-    <Item itemName="BOOK/OTHER" itemNameJp="本・グッズ" :image="bookIcon" />
+    <Item  v-for="(item, index) in items" :key="index" :itemName="item.name" :itemNameJp="item.name_jp" :image="item.link" />
   </div>
 </template>
 
@@ -24,19 +13,23 @@ export default {
   components: {
     Item
   },
-  computed: {
-    macaronIcon () { return category.MacaronIcon },
-    drinkIcon () { return category.DrinkIcon },
-    patisserieIcon () { return category.PatisserieIcon },
-    confitureIcon () { return category.ConfitureIcon },
-    chocolatIcon () { return category.ChocolatIcon },
-    viennoiserieIcon () { return category.ViennoiserieIcon },
-    poundcakeIcon () { return category.PoundcakeIcon },
-    icecreamIcon () { return category.IcecreamIcon },
-    sableIcon () { return category.SableIcon },
-    giftIcon () { return category.GiftIcon },
-    confectionIcon () { return category.ConfectionIcon },
-    bookIcon () { return category.BookIcon },
+  data () {
+    return {
+      items: [
+        {name: 'MACARONS', name_jp: 'マカロン', link: category.MacaronIcon },
+        {name: 'TEA&DRINKS', name_jp: '紅茶・飲料', link: category.DrinkIcon },
+        {name: 'PATISSERIES', name_jp: 'パティスリー', link: category.PatisserieIcon },
+        {name: 'CONFITURE', name_jp: 'ジャム', link: category.ConfitureIcon },
+        {name: 'CHOCOLATS', name_jp: 'ショコラ', link: category.ChocolatIcon },
+        {name: 'VENNOISERIES', name_jp: '菓子パン', link: category.ViennoiserieIcon },
+        {name: 'POUND CAKES', name_jp: '焼き菓子', link: category.PoundcakeIcon },
+        {name: 'ICE CREAM', name_jp: 'アイスクリーム', link: category.IcecreamIcon },
+        {name: 'SABLES', name_jp: 'サブレ・クッキー', link: category.SableIcon },
+        {name: 'GIFT SET', name_jp: '詰合せギフトセット', link: category.GiftIcon },
+        {name: 'CONFECTION', name_jp: 'キャンディー菓子', link: category.ConfectionIcon },
+        {name: 'BOOK/OTHER', name_jp: '本・グッズ', link: category.BookIcon }
+      ]
+    }
   }
 }
 </script>
