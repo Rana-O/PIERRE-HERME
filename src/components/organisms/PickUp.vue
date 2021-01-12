@@ -19,10 +19,7 @@
 <script>
 // import Title from '@/components/atoms/Title.vue'
 import PickUpItem from '@/components/molecs/PickUpItem.vue'
-import PickUpFetish from '@/assets/pick-up/top-bnr_fetish-fraise-pistache_2020.jpg'
-import PickUpMacaron from '@/assets/pick-up/main_macarons.jpg'
-import PickUpChocolat from '@/assets/pick-up/top-bnr_chocolat-2019.jpg'
-import PickUpGift from '@/assets/pick-up/top-bnr_gift.jpg'
+import { pickUp } from '@/components/atoms/images'
 
 export default {
   name: 'PickUp',
@@ -31,10 +28,10 @@ export default {
     PickUpItem
   },
   computed: {
-    pickUpFetish () {return PickUpFetish},
-    pickUpMacaron () {return PickUpMacaron},
-    pickUpChocolat () {return PickUpChocolat},
-    pickUpGift () {return PickUpGift},
+    pickUpFetish () {return pickUp.PickUpFetish},
+    pickUpMacaron () {return pickUp.PickUpMacaron},
+    pickUpChocolat () {return pickUp.PickUpChocolat},
+    pickUpGift () {return pickUp.PickUpGift},
   }
 }
 </script>

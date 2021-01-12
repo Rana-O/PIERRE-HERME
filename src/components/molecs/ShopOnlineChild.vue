@@ -12,26 +12,21 @@
 
 <script>
 import Item from '@/components/atoms/Item.vue'
-import MacaronIcon from '@/assets/item/macarons.jpg'
-import ChocolatsIcon from '@/assets/item/chocolats.jpg'
-import SablesIcon from '@/assets/item/sables_cakes.jpg'
-import IcecreamIcon from '@/assets/item/icecream_menu.jpg'
-import GiftIcon from '@/assets/item/gift_menu.jpg'
-import OthersIcon from '@/assets/item/others.jpg'
-import AoyamaIcon from '@/assets/item/aoyama.jpg'
+import { header } from '@/components/atoms/images'
+
 export default {
   name: 'ShopOnlineChild',
   components: {
     Item
   },
   computed: {
-    macaronIcon () { return MacaronIcon },
-    chocolatsIcon () { return ChocolatsIcon },
-    sablesIcon () { return SablesIcon },
-    icecreamIcon () { return IcecreamIcon },
-    giftIcon () { return GiftIcon },
-    othersIcon () { return OthersIcon },
-    aoyamaIcon () { return AoyamaIcon },
+    macaronIcon () { return header.MacaronIcon },
+    chocolatsIcon () { return header.ChocolatsIcon },
+    sablesIcon () { return header.SablesIcon },
+    icecreamIcon () { return header.IcecreamIcon },
+    giftIcon () { return header.GiftIcon },
+    othersIcon () { return header.OthersIcon },
+    aoyamaIcon () { return header.AoyamaIcon },
   }
 }
 </script>
