@@ -2,8 +2,8 @@
   <div id="shop-online">
     <SiteMapTitle title="SHOP ONLINE" />
     <div class="site-map-columns">
-      <div v-for="(column, index) in columns" :key="index" class="columns-br">
-        <a v-for="(item, index) in column" :key="index" :href="item.link">{{item.title}}</a>
+      <div class="columns-br" v-for="(column, index) in columns" :key="index">
+        <a v-for="(item, index) in column" :key="index" :href="item.link">{{ item.title }}</a>
       </div>
     </div>
   </div>
@@ -39,7 +39,6 @@ export default {
       {title: '詰合せギフトセット', link: '#11'},
       {title: '本・グッズ', link: '#12'},
     ]
-
     return {
       columns: [
         column1,
