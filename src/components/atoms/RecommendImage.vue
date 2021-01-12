@@ -15,6 +15,6 @@ export default {
 
 <style scoped>
   .recommend-image img {
-    width: 260px;
+    width: 240px;
   }
 </style>
