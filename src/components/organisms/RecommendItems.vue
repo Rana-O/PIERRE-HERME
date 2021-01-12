@@ -41,36 +41,26 @@
 
 <script>
 import RecommendItem from '@/components/molecs/RecommendItem.vue'
-import Icon1 from '@/assets/recommend/005398-1.jpg'
-import Icon2 from '@/assets/recommend/004070-2.jpg'
-import Icon3 from '@/assets/recommend/004060-3.jpg'
-import Icon4 from '@/assets/recommend/000040-4.jpg'
-import Icon5 from '@/assets/recommend/004317-5.jpg'
-import Icon6 from '@/assets/recommend/003857-6.jpg'
-import Icon7 from '@/assets/recommend/003862-7.jpg'
-import Icon8 from '@/assets/recommend/005195-8.jpg'
-import Icon9 from '@/assets/recommend/005273-9.jpg'
-import Icon10 from '@/assets/recommend/005277-10.jpg'
-import Icon11 from '@/assets/recommend/005334-11.jpg'
-import Icon12 from '@/assets/recommend/005337-12.jpg'
+import { recommend } from '@/components/atoms/images'
+
 export default {
   name:'RecommendItems',
   components: {
     RecommendItem
   },
   computed: {
-    icon1 () { return Icon1 },
-    icon2 () { return Icon2 },
-    icon3 () { return Icon3 },
-    icon4 () { return Icon4 },
-    icon5 () { return Icon5 },
-    icon6 () { return Icon6 },
-    icon7 () { return Icon7 },
-    icon8 () { return Icon8 },
-    icon9 () { return Icon9 },
-    icon10 () { return Icon10 },
-    icon11 () { return Icon11 },
-    icon12 () { return Icon12 },
+    icon1 () { return recommend.Icon1 },
+    icon2 () { return recommend.Icon2 },
+    icon3 () { return recommend.Icon3 },
+    icon4 () { return recommend.Icon4 },
+    icon5 () { return recommend.Icon5 },
+    icon6 () { return recommend.Icon6 },
+    icon7 () { return recommend.Icon7 },
+    icon8 () { return recommend.Icon8 },
+    icon9 () { return recommend.Icon9 },
+    icon10 () { return recommend.Icon10 },
+    icon11 () { return recommend.Icon11 },
+    icon12 () { return recommend.Icon12 },
   }
 }
 </script>
