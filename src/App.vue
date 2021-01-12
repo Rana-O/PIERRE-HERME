@@ -6,6 +6,7 @@
       <PickUp />
       <Recommend />
       <Journal />
+      <Footer />
       <img alt="logo" src="./assets/hero/top_fraise-pistache-2020_pc.jpg">
     </div>
   </div>
@@ -17,6 +18,7 @@ import Category from '@/components/organisms/Category.vue'
 import PickUp from '@/components/organisms/PickUp.vue'
 import Recommend from '@/components/organisms/Recommend.vue'
 import Journal from '@/components/organisms/Journal.vue'
+import Footer from '@/components/organisms/Footer.vue'
 
 export default {
   name: 'Page',
@@ -25,7 +27,8 @@ export default {
     Category,
     PickUp,
     Recommend,
-    Journal
+    Journal,
+    Footer
   }
 }
 </script>
