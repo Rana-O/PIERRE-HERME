@@ -7,7 +7,6 @@
       <Recommend />
       <Journal />
       <Footer />
-      <img alt="logo" src="./assets/hero/top_fraise-pistache-2020_pc.jpg">
     </div>
   </div>
 </template>

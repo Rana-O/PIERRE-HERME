@@ -17,10 +17,7 @@
 
 <script>
 import JournalItem from '@/components/molecs/JournalItem.vue'
-import Journal1 from '@/assets/journal/journal_sv21_main.jpg'
-import Journal2 from '@/assets/journal/journal_mac_flavor_202101_sumb.jpg'
-import Journal3 from '@/assets/journal/journal_wind-and-sea-2020_main.jpg'
-import Journal4 from '@/assets/journal/journal_epiphanie-2021_main.jpg'
+import { journal } from '@/components/atoms/images'
 
 export default {
   name:'JournalItems',
@@ -28,10 +25,10 @@ export default {
     JournalItem
   },
   computed: {
-    journal1 () { return Journal1 },
-    journal2 () { return Journal2 },
-    journal3 () { return Journal3 },
-    journal4 () { return Journal4 },
+    journal1 () { return journal.Journal1 },
+    journal2 () { return journal.Journal2 },
+    journal3 () { return journal.Journal3 },
+    journal4 () { return journal.Journal4 },
   }
 }
 </script>
