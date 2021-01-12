@@ -17,18 +17,7 @@
 
 <script>
 import Item from '@/components/atoms/Item.vue'
-import MacaronIcon from '@/assets/item/macarons.jpg'
-import DrinkIcon from '@/assets/item/drinks.jpg'
-import PatisserieIcon from '@/assets/item/patisseries.jpg'
-import ConfitureIcon from '@/assets/item/confiture.jpg'
-import ChocolatIcon from '@/assets/item/chocolats.jpg'
-import ViennoiserieIcon from '@/assets/item/viennoiser.jpg'
-import PoundcakeIcon from '@/assets/item/cakes.jpg'
-import IcecreamIcon from '@/assets/item/icecream_menu.jpg'
-import SableIcon from '@/assets/item/sables.jpg'
-import GiftIcon from '@/assets/item/gift_menu.jpg'
-import ConfectionIcon from '@/assets/item/confectionery.jpg'
-import BookIcon from '@/assets/item/book.jpg'
+import { category } from '@/components/atoms/images'
 
 export default {
   name: 'CategoryItems',
@@ -36,18 +25,18 @@ export default {
     Item
   },
   computed: {
-    macaronIcon () { return MacaronIcon },
-    drinkIcon () { return DrinkIcon },
-    patisserieIcon () { return PatisserieIcon },
-    confitureIcon () { return ConfitureIcon },
-    chocolatIcon () { return ChocolatIcon },
-    viennoiserieIcon () { return ViennoiserieIcon },
-    poundcakeIcon () { return PoundcakeIcon },
-    icecreamIcon () { return IcecreamIcon },
-    sableIcon () { return SableIcon },
-    giftIcon () { return GiftIcon },
-    confectionIcon () { return ConfectionIcon },
-    bookIcon () { return BookIcon },
+    macaronIcon () { return category.MacaronIcon },
+    drinkIcon () { return category.DrinkIcon },
+    patisserieIcon () { return category.PatisserieIcon },
+    confitureIcon () { return category.ConfitureIcon },
+    chocolatIcon () { return category.ChocolatIcon },
+    viennoiserieIcon () { return category.ViennoiserieIcon },
+    poundcakeIcon () { return category.PoundcakeIcon },
+    icecreamIcon () { return category.IcecreamIcon },
+    sableIcon () { return category.SableIcon },
+    giftIcon () { return category.GiftIcon },
+    confectionIcon () { return category.ConfectionIcon },
+    bookIcon () { return category.BookIcon },
   }
 }
 </script>
