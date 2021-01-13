@@ -1,16 +1,7 @@
 <template>
   <div id="journal-items">
     <div class="journal-item-container">
-      <JournalItem :image="journal1" title="Saint Valentin 2021" date="2021/01/05" />
-    </div>
-    <div class="journal-item-container">
-      <JournalItem :image="journal2" title="1月のマカロンフレーバー" date="2020/12/28" />
-    </div>
-    <div class="journal-item-container">
-      <JournalItem :image="journal3" title="WIND AND SEA 別注のマカロンを数量限定で販売いたします" date="2020/12/17" />
-    </div>
-    <div class="journal-item-container">
-      <JournalItem :image="journal4" title="12月のマカロンフレーバー" date="2020/12/01" />
+      <JournalItem v-for="(item, index) in items" :key="index" :image="item.image" :title="item.title" :date="item.date" />
     </div>
   </div>
 </template>
@@ -24,11 +15,15 @@ export default {
   components: {
     JournalItem
   },
-  computed: {
-    journal1 () { return journal.Journal1 },
-    journal2 () { return journal.Journal2 },
-    journal3 () { return journal.Journal3 },
-    journal4 () { return journal.Journal4 },
+  data () {
+    return {
+      items: [
+        {image:journal.Journal1 , title: 'Saint Valentin 2021', date:'2021/01/05'},
+        {image:journal.Journal2 , title: '1月のマカロンフレーバー', date:'2020/12/28'},
+        {image:journal.Journal3 , title: 'WIND AND SEA 別注のマカロンを数量限定で販売いたします', date:'2020/12/17'},
+        {image:journal.Journal4 , title: '12月のマカロンフレーバー', date:'2020/12/01'}
+      ]
+    }
   }
 }
 </script>
@@ -39,6 +34,8 @@ export default {
     flex-wrap: wrap;
   }
   .journal-item-container {
-    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 </style>
