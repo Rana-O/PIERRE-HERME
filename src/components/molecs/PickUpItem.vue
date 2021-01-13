@@ -24,5 +24,7 @@ export default {
 </script>
 
 <style scoped>
-
+  .pick-up-item {
+    width: 50%;
+  }
 </style>
