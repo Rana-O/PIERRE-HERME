@@ -8,6 +8,16 @@
       <Journal />
       <Footer />
       <TestFooter />
+      <VueSlickCarousel
+        :arrow="true"
+        :dots="true"
+        :autoplay="true"
+      >
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+      </VueSlickCarousel>
     </div>
   </div>
 </template>
@@ -19,7 +29,12 @@ import PickUp from '@/components/organisms/PickUp.vue'
 import Recommend from '@/components/organisms/Recommend.vue'
 import Journal from '@/components/organisms/Journal.vue'
 import Footer from '@/components/organisms/Footer.vue'
-import TestFooter from '@/components/organisms/TestFooter.vue'
+import VueSlickCarousel from 'vue-slick-carousel'
+// import 'vue-slick-carousel/dist/vue-slick-carousel.umd'
+import 'vue-slick-carousel/dist/vue-slick-carousel.css'
+// optional style for arrows & dots
+import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
+
 
 export default {
   name: 'Page',
@@ -30,7 +45,7 @@ export default {
     Recommend,
     Journal,
     Footer,
-    TestFooter
+    VueSlickCarousel
   }
 }
 </script>
