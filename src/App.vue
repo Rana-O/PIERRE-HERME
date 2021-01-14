@@ -7,6 +7,7 @@
       <Recommend />
       <Journal />
       <Footer />
+      <TestFooter />
     </div>
   </div>
 </template>
@@ -18,6 +19,7 @@ import PickUp from '@/components/organisms/PickUp.vue'
 import Recommend from '@/components/organisms/Recommend.vue'
 import Journal from '@/components/organisms/Journal.vue'
 import Footer from '@/components/organisms/Footer.vue'
+import TestFooter from '@/components/organisms/TestFooter.vue'
 
 export default {
   name: 'Page',
@@ -27,7 +29,8 @@ export default {
     PickUp,
     Recommend,
     Journal,
-    Footer
+    Footer,
+    TestFooter
   }
 }
 </script>
