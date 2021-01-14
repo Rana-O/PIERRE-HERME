@@ -3,11 +3,7 @@
     <SiteMapTitle title="SHOPPING GUIDE" />
     <div class="site-map-columns">
       <div class="columns-br">
-        <a href="#">ご利用ガイド</a>
-        <a href="#">配送・送料について</a>
-        <a href="#">お支払い方法</a>
-        <a href="#">よくあるご質問</a>
-        <a href="#">お問い合わせ</a>
+        <a v-for="(item, index) in items" :key="index" :href="item.link">{{ item.title }}</a>
       </div>
     </div>
   </div>
@@ -19,6 +15,17 @@ export default {
   name: 'ShoppingGuide',
   components: {
     SiteMapTitle
+  },
+  data () {
+    return {
+      items: [
+        {title: 'ご利用ガイド', link: '#1'},
+        {title: '配送・送料について', link: '#2'},
+        {title: 'お支払い方法', link: '#3'},
+        {title: 'よくあるご質問', link: '#4'},
+        {title: 'お問い合わせ', link: '#5'}
+      ]
+    }
   }
 }
 </script>

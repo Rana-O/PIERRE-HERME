@@ -3,10 +3,7 @@
     <SiteMapTitle title="ABOUT US" />
     <div class="site-map-columns">
       <div class="columns-br">
-        <a href="#">会社概要</a>
-        <a href="#">プレスリリース</a>
-        <a href="#">採用情報</a>
-        <a href="#">ニュースレター登録</a>
+        <a v-for="(item, index) in items" :key="index" :href="item.link">{{ item.title }}</a>
       </div>
     </div>
   </div>
@@ -18,6 +15,16 @@ export default {
   name: 'AboutUs',
   components: {
     SiteMapTitle
+  },
+  data () {
+    return {
+      items: [
+        {title: '会社概要', link: '#1'},
+        {title: 'プレスリリース', link: '#2'},
+        {title: '採用情報', link: '#3'},
+        {title: 'ニュースレター登録', link: '#4'}
+      ]
+    }
   }
 }
 </script>

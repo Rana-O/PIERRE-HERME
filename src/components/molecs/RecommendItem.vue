@@ -25,7 +25,7 @@ export default {
 
 <style scoped>
   .recommend-item {
-    width: 260px;
+    width: 245px;
     padding: 12px;
   }
 </style>

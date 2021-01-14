@@ -3,10 +3,7 @@
     <SiteMapTitle title="OUR BRAND" />
     <div class="site-map-columns">
       <div class="columns-br">
-        <a href="#">ピエール・エルメについて</a>
-        <a href="#">ブランドヒストリー</a>
-        <a href="#">法人のお客様へ</a>
-        <a href="#">ライセンスプロダクト</a>
+        <a v-for="(item, index) in items" :key="index" :href="item.link">{{ item.title }}</a>
       </div>
     </div>
   </div>
@@ -18,6 +15,16 @@ export default {
   name: 'OurBrand',
   components: {
     SiteMapTitle
+  },
+  data () {
+    return {
+      items: [
+        {title:'ピエール・エルメについて', link:'#1'},
+        {title:'ブランドヒストリー', link:'#2'},
+        {title:'法人のお客様へ', link:'#3'},
+        {title:'ライセンスプロダクト', link:'#4'}
+      ]
+    }
   }
 }
 </script>

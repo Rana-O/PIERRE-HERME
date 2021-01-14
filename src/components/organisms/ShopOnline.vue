@@ -2,23 +2,8 @@
   <div id="shop-online">
     <SiteMapTitle title="SHOP ONLINE" />
     <div class="site-map-columns">
-      <div class="columns-br">
-        <a href="#">マカロン</a>
-        <a href="#">パティスリー（生ケーキ）</a>
-        <a href="#">チョコレート</a>
-        <a href="#">パウンドケーキ・焼き菓子</a>
-      </div>
-      <div class="columns-br">
-        <a href="#">サブレ・クッキー</a>
-        <a href="#">キャンディー菓子</a>
-        <a href="#">紅茶・その他飲料</a>
-        <a href="#">コンフィチュール（ジャム）</a>
-      </div>
-      <div class="columns-br">
-        <a href="#">ヴィエノワズリー（菓子パン）</a>
-        <a href="#">アイスクリーム・ソルベ</a>
-        <a href="#">詰合せギフトセット</a>
-        <a href="#">本・グッズ</a>
+      <div class="columns-br" v-for="(column, index) in columns" :key="index">
+        <a v-for="(item, index) in column" :key="index" :href="item.link">{{ item.title }}</a>
       </div>
     </div>
   </div>
@@ -33,7 +18,35 @@ export default {
   },
   props: [
     'title'
-  ]
+  ],
+  data () {
+    const column1 = [
+      {title: 'マカロン', link: '#1'},
+      {title: 'パティスリー（生ケーキ）', link: '#2'},
+      {title: 'チョコレート', link: '#3'},
+      {title: 'パウンドケーキ・焼き菓子', link: '#4'}
+    ]
+    const column2 = [
+      {title: 'サブレ・クッキー', link: '#5'},
+      {title: 'キャンディー菓子', link: '#6'},
+      {title: '紅茶・その他飲料', link: '#7'},
+      {title: 'コンフィチュール（ジャム）', link: '#8'},
+
+    ]
+    const column3 = [
+      {title: 'ヴィエノワズリー（菓子パン）', link: '#9'},
+      {title: 'アイスクリーム・ソルベ', link: '#10'},
+      {title: '詰合せギフトセット', link: '#11'},
+      {title: '本・グッズ', link: '#12'},
+    ]
+    return {
+      columns: [
+        column1,
+        column2,
+        column3
+      ]
+    }
+  }
 }
 </script>
 
