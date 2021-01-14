@@ -19,10 +19,10 @@ export default {
   data () {
     return {
       items: [
-        {title:'ピエール・エルメについて', link:'#1'},
-        {title:'ブランドヒストリー', link:'#2'},
-        {title:'法人のお客様へ', link:'#3'},
-        {title:'ライセンスプロダクト', link:'#4'}
+        {title: 'ピエール・エルメについて', link: '#1'},
+        {title: 'ブランドヒストリー', link: '#2'},
+        {title: '法人のお客様へ', link: '#3'},
+        {title: 'ライセンスプロダクト', link: '#4'}
       ]
     }
   }

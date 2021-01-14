@@ -18,25 +18,25 @@ export default {
   },
   data () {
     const column1 = [
-      {title: 'TOKYO AOYAMA', link:'#1'},
-      {title: 'Heaven', link:'#2'},
-      {title: 'ホテルニューオータニ', link:'#3'},
-      {title: 'ザ・リッツ・カールトン', link:'#4'},
-      {title: 'パーク ハイアット ニセコ HANAZONO', link:'#5'}
+      {title: 'TOKYO AOYAMA', link: '#1'},
+      {title: 'Heaven', link: '#2'},
+      {title: 'ホテルニューオータニ', link: '#3'},
+      {title: 'ザ・リッツ・カールトン', link: '#4'},
+      {title: 'パーク ハイアット ニセコ HANAZONO', link:  '#5'}
     ]
     const column2 = [
-      {title: '伊勢丹新宿', link:'#6'},
-      {title: '日本橋三越', link:'#7'},
-      {title: '大丸東京', link:'#8'},
-      {title: '西武池袋', link:'#9'},
-      {title: '渋谷ヒカリエ', link:'#10'}
+      {title: '伊勢丹新宿', link: '#6'},
+      {title: '日本橋三越', link: '#7'},
+      {title: '大丸東京', link: '#8'},
+      {title: '西武池袋', link: '#9'},
+      {title: '渋谷ヒカリエ', link: '#10'}
     ]
     const coulmn3 = [
-      {title: '松屋銀座', link:'#11'},
-      {title: '大丸神戸', link:'#12'},
-      {title: 'そごう横浜', link:'#13'},
-      {title: '名古屋栄三越', link:'#14'},
-      {title: 'ジェイアール京都伊勢丹', link:'#15'}
+      {title: '松屋銀座', link: '#11'},
+      {title: '大丸神戸', link: '#12'},
+      {title: 'そごう横浜', link: '#13'},
+      {title: '名古屋栄三越', link: '#14'},
+      {title: 'ジェイアール京都伊勢丹', link: '#15'}
     ]
     return {
       columns: [
