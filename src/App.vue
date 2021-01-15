@@ -2,6 +2,7 @@
   <div id="page">
     <div id="page-container">
       <Header/>
+      <Carousel />
       <Category />
       <PickUp />
       <Recommend />
@@ -20,6 +21,7 @@ import Recommend from '@/components/organisms/Recommend.vue'
 import Journal from '@/components/organisms/Journal.vue'
 import Footer from '@/components/organisms/Footer.vue'
 import TestFooter from '@/components/organisms/TestFooter.vue'
+import Carousel from '@/components/organisms/Carousel.vue'
 
 export default {
   name: 'Page',
@@ -30,7 +32,8 @@ export default {
     Recommend,
     Journal,
     Footer,
-    TestFooter
+    TestFooter,
+    Carousel
   }
 }
 </script>
