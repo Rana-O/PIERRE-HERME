@@ -23,8 +23,6 @@ import Footer from '@/components/organisms/Footer.vue'
 import TestFooter from '@/components/organisms/TestFooter.vue'
 import Carousel from '@/components/organisms/Carousel.vue'
 
-
-
 export default {
   name: 'Page',
   components: {

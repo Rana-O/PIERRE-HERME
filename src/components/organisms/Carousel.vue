@@ -1,21 +1,21 @@
 <template>
   <div id="carousel">
     <VueSlickCarousel
-        :arrow="true"
-        :dots="true"
-        :autoplay="true"
-      >
-        <div class="carousel-image">
-          <img src="@/assets/hero/mac_autumn-winter-2018_pc.jpg">
-          <p>マカロン詰合せ</p>
-          <p>ピエール・エルメ・パリ人気のマカロンを詰合わせたギフトを販売中</p>
-        </div>
-        <div class="carousel-image">
-          <img src="@/assets/hero/private-delivery-1_pc.jpg">
-          <p>プライベートデリバリー</p>
-          <p>喜びあふれる味覚をお届けするプライベートデリバリーがはじまります</p>
-        </div>
-      </VueSlickCarousel>
+      :arrow="true"
+      :dots="true"
+      :autoplay="true"
+    >
+      <div class="carousel-image">
+        <img src="@/assets/hero/mac_autumn-winter-2018_pc.jpg">
+        <p>マカロン詰合せ</p>
+        <p>ピエール・エルメ・パリ人気のマカロンを詰合わせたギフトを販売中</p>
+      </div>
+      <div class="carousel-image">
+        <img src="@/assets/hero/private-delivery-1_pc.jpg">
+        <p>プライベートデリバリー</p>
+        <p>喜びあふれる味覚をお届けするプライベートデリバリーがはじまります</p>
+      </div>
+    </VueSlickCarousel>
   </div>
 </template>
 
