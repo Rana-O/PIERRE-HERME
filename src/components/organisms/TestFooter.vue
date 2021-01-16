@@ -9,12 +9,13 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
+import Vue from 'vue'
 import FooterMenu from '@/components/molecs/FooterMenu.vue'
-import footerMenus from '@/components/atoms/data/footer-menus.js'
+import footerMenus from '@/components/atoms/data/footer-menus.ts'
 import Feature from '@/components/organisms/Feature.vue'
 
-export default {
+export default Vue.extend({
   name: 'TestFooter',
   components: {
     FooterMenu,
@@ -25,7 +26,7 @@ export default {
       return footerMenus
     }
   }
-}
+})
 </script>
 
 <style scoped>

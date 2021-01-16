@@ -1,4 +1,4 @@
-export default {
+const data = {
   shopOnlineMenus: [
     [
       {title: 'マカロン', link: '#1'},
@@ -68,3 +68,5 @@ export default {
     ]
   ]
 }
+
+export default data
