@@ -70,3 +70,9 @@ const data = {
 }
 
 export default data
+export type Column = {
+  title: string;
+  link: string;
+}
+export type Columns = Array<Column>
+export type Menu = Array<Columns>

@@ -9,13 +9,14 @@
   </div>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import Vue, { PropType } from 'vue'
+export default Vue.extend({
   name:'Button',
-  props: [
-    'buttonName'
-  ]
-}
+  props: {
+    buttonName: String as PropType<string>
+  }
+})
 </script>
 
 <style scoped>

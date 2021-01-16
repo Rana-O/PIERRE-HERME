@@ -13,7 +13,8 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
+import Vue from 'vue'
 import Header from '@/components/organisms/Header.vue'
 import Category from '@/components/organisms/Category.vue'
 import PickUp from '@/components/organisms/PickUp.vue'
@@ -23,7 +24,7 @@ import Footer from '@/components/organisms/Footer.vue'
 import TestFooter from '@/components/organisms/TestFooter.vue'
 import Carousel from '@/components/organisms/Carousel.vue'
 
-export default {
+export default Vue.extend({
   name: 'Page',
   components: {
     Header,
@@ -35,7 +36,7 @@ export default {
     TestFooter,
     Carousel
   }
-}
+})
 </script>
 
 <style scoped>
