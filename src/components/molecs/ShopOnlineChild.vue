@@ -1,6 +1,6 @@
 <template>
   <div class="shop-online-child">
-    <Item v-for="(item, index) in items" :key="index" :itemName="item.name" :itemNameJp="item.name_jp" :image="item.icon" />
+    <Item v-for="(item, index) in items" :key="index" :itemName="item.name" :itemNameJp="item.nameJp" :image="item.icon" />
   </div>
 </template>
 
@@ -16,13 +16,13 @@ export default {
   data () {
     return {
       items: [
-        {name: 'MACARONS', name_jp: 'マカロン', icon: header.MacaronIcon },
-        {name: 'CHOCOLATS', name_jp: 'ショコラ', icon: header.ChocolatsIcon },
-        {name: 'SABLES&CAKES', name_jp: '焼き菓子', icon: header.SablesIcon },
-        {name: 'ICE CREAM', name_jp: 'アイスクリーム', icon: header.IcecreamIcon },
-        {name: 'GIFT SET', name_jp: '詰合せギフトセット', icon: header.GiftIcon },
-        {name: 'OTHERS', name_jp: 'その他', icon: header.OthersIcon },
-        {name: 'AOYAMA', name_jp: 'ケーキのご予約', icon: header.AoyamaIcon },
+        {name: 'MACARONS', nameJp: 'マカロン', icon: header.MacaronIcon },
+        {name: 'CHOCOLATS', nameJp: 'ショコラ', icon: header.ChocolatsIcon },
+        {name: 'SABLES&CAKES', nameJp: '焼き菓子', icon: header.SablesIcon },
+        {name: 'ICE CREAM', nameJp: 'アイスクリーム', icon: header.IcecreamIcon },
+        {name: 'GIFT SET', nameJp: '詰合せギフトセット', icon: header.GiftIcon },
+        {name: 'OTHERS', nameJp: 'その他', icon: header.OthersIcon },
+        {name: 'AOYAMA', nameJp: 'ケーキのご予約', icon: header.AoyamaIcon },
       ]
     }
   }

@@ -1,4 +1,4 @@
-# pierre-herme
+# pierre-herme-ts
 
 ## Project setup
 ```
