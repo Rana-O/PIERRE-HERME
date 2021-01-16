@@ -4,11 +4,12 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
+import Vue from 'vue'
 import Item from '@/components/atoms/Item.vue'
 import { header } from '@/components/atoms/images'
 
-export default {
+export default Vue.extend({
   name: 'ShopOnlineChild',
   components: {
     Item
@@ -26,7 +27,7 @@ export default {
       ]
     }
   }
-}
+})
 </script>
 
 <style scoped>

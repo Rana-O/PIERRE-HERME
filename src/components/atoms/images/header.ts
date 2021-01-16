@@ -6,7 +6,7 @@ import GiftIcon from '@/assets/item/gift_menu.jpg'
 import OthersIcon from '@/assets/item/others.jpg'
 import AoyamaIcon from '@/assets/item/aoyama.jpg'
 
-export default {
+const data = {
   MacaronIcon,
   ChocolatsIcon,
   SablesIcon,
@@ -15,3 +15,5 @@ export default {
   OthersIcon,
   AoyamaIcon
 }
+
+export default data

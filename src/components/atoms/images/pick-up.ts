@@ -3,9 +3,11 @@ import PickUpMacaron from '@/assets/pick-up/main_macarons.jpg'
 import PickUpChocolat from '@/assets/pick-up/top-bnr_chocolat-2019.jpg'
 import PickUpGift from '@/assets/pick-up/top-bnr_gift.jpg'
 
-export default {
+const data = {
   PickUpFetish,
   PickUpMacaron,
   PickUpChocolat,
   PickUpGift
 }
+
+export default data

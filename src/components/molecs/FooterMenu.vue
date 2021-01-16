@@ -9,26 +9,31 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
+import Vue, { PropType } from 'vue'
 import SiteMapTitle from '@/components/atoms/SiteMapTitle.vue'
-export default {
+
+export default Vue.extend({
   name: 'FooterMenu',
-  props: [
-    'title',
-    'columns'
-  ],
+
+  props: {
+    title: String as PropType<string>,
+    columns: Array as PropType<Array<any>>
+  },
+
   components: {
     SiteMapTitle
   },
+
   computed: {
-    columnCount () {
+    columnCount (): number {
       return this.columns.length || 1
     },
-    styleText () {
+    styleText (): string {
       return `width: calc(100%/3*${this.columnCount})`
     }
   }
-}
+})
 </script>
 
 <style scoped>

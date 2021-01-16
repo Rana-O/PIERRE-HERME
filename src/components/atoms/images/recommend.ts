@@ -11,7 +11,7 @@ import Icon10 from '@/assets/recommend/005277-10.jpg'
 import Icon11 from '@/assets/recommend/005334-11.jpg'
 import Icon12 from '@/assets/recommend/005337-12.jpg'
 
-export default {
+const data = {
   Icon1,
   Icon2,
   Icon3,
@@ -25,3 +25,4 @@ export default {
   Icon11,
   Icon12
 }
+export default data
