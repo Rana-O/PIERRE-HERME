@@ -5,19 +5,22 @@
 </div>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import Vue, { PropType } from 'vue'
+export default Vue.extend({
   name: 'Guide',
-  props: [
-    'title',
-    'icon'
-  ],
+
+  props: {
+    title: String as PropType<string>,
+    icon: String as PropType<string>
+  },
+
   computed: {
-    iconClassName () {
+    iconClassName (): string {
       return `${this.icon}`
     }
   }
-}
+})
 </script>
 
 <style scoped>
