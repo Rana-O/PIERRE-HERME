@@ -32,19 +32,21 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
+import Vue from 'vue'
 import NavItem from '@/components/atoms/NavItem.vue'
 import NavChild from '@/components/atoms/NavChild.vue'
 import ShopOnlineChild from '@/components/molecs/ShopOnlineChild.vue'
 
-export default {
+export default Vue.extend({
   name: 'Nav',
-  components: {
+
+components: {
     NavItem,
     NavChild,
     ShopOnlineChild
   }
-}
+})
 </script>
 
 <style scoped>
