@@ -12,14 +12,17 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
+import Vue from 'vue'
 import SiteMapTitle from '@/components/atoms/SiteMapTitle.vue'
-export default {
+
+export default Vue.extend({
   name: 'Feature',
+
   components: {
     SiteMapTitle
   }
-}
+})
 </script>
 
 <style scoped>
