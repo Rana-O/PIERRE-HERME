@@ -4,16 +4,29 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
+import Vue from 'vue'
 import RecommendItem from '@/components/molecs/RecommendItem.vue'
 import { recommend } from '@/components/atoms/images'
 
-export default {
+type RecommendItemsItem = {
+  icon: string;
+  name: string;
+  price: string;
+}
+
+type DataType = {
+  items: Array<RecommendItemsItem>
+}
+
+export default Vue.extend({
   name:'RecommendItems',
+
   components: {
     RecommendItem
   },
-  data () {
+
+  data (): DataType {
     return {
       items: [
         {icon: recommend.Icon1 , name: 'マカロン 6個詰め合わせ WIND AND SEA × PIERRE HERMÉ PARIS', price: '¥3,456'},
@@ -31,7 +44,7 @@ export default {
       ]
     }
   }
-}
+})
 </script>
 
 <style scoped>
