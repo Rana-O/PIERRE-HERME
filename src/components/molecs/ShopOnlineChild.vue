@@ -9,12 +9,22 @@ import Vue from 'vue'
 import Item from '@/components/atoms/Item.vue'
 import { header } from '@/components/atoms/images'
 
+type ShopOnlineChildItem = {
+  name: string;
+  nameJp: string;
+  icon: string;
+}
+
+type DateType = {
+  items: Array<ShopOnlineChildItem>;
+}
+
 export default Vue.extend({
   name: 'ShopOnlineChild',
   components: {
     Item
   },
-  data () {
+  data (): DateType {
     return {
       items: [
         {name: 'MACARONS', nameJp: 'マカロン', icon: header.MacaronIcon },
