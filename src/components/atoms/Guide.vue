@@ -1,6 +1,6 @@
 <template>
 <div class="guide">
-  <font-awesome-icon class="font-awesome" :icon="iconClassName"></font-awesome-icon>
+  <font-awesome-icon class="font-awesome" :icon="icon"></font-awesome-icon>
   <a>{{ title }}</a>
 </div>
 </template>
@@ -13,12 +13,6 @@ export default Vue.extend({
   props: {
     title: String as PropType<string>,
     icon: String as PropType<string>
-  },
-
-  computed: {
-    iconClassName (): string {
-      return `${this.icon}`
-    }
   }
 })
 </script>
