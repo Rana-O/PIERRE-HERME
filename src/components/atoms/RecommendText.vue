@@ -6,14 +6,16 @@
   </div>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import Vue, { PropType } from 'vue'
+export default Vue.extend({
   name: 'RecommendText',
-  props: [
-    'name',
-    'price'
-  ]
-}
+
+  props: {
+    name: String as PropType<string>,
+    price: String as PropType<string>
+  }
+})
 </script>
 
 <style scoped>
