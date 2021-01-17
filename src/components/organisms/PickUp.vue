@@ -9,18 +9,31 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
+import Vue from 'vue'
 import Title from '@/components/atoms/Title.vue'
 import PickUpItem from '@/components/molecs/PickUpItem.vue'
 import { pickUp } from '@/components/atoms/images'
 
-export default {
+type PickUpItem = {
+  image: string;
+  title: string;
+  text: string;
+}
+
+type DataType = {
+  items: Array<PickUpItem>
+}
+
+export default Vue.extend({
   name: 'PickUp',
+
   components: {
     Title,
     PickUpItem
   },
-  data () {
+
+  data (): DataType {
     return {
       items: [
         {image: pickUp.PickUpFetish, title: 'FETISH Fraise Pistache', text: 'ピスタチオが持つかりかり感やほんのりと香ばしい風味と、イチゴのフレッシュな爽快感やフルーティな酸味が、高貴な味覚のコンビネーションを生んでいます。'},
@@ -30,7 +43,7 @@ export default {
       ]
     }
   }
-}
+})
 </script>
 
 <style scoped>
