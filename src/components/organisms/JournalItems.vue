@@ -6,16 +6,29 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
+import Vue from 'vue'
 import JournalItem from '@/components/molecs/JournalItem.vue'
 import { journal } from '@/components/atoms/images'
 
-export default {
+type JournalItemsItem = {
+  image: string;
+  title: string;
+  date: string;
+}
+
+type DataType = {
+  items: Array<JournalItemsItem>;
+}
+
+export default Vue.extend({
   name:'JournalItems',
+
   components: {
     JournalItem
   },
-  data () {
+
+  data (): DataType {
     return {
       items: [
         {image: journal.Journal1 , title: 'Saint Valentin 2021', date: '2021/01/05'},
@@ -25,7 +38,7 @@ export default {
       ]
     }
   }
-}
+})
 </script>
 
 <style scoped>
