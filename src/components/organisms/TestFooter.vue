@@ -17,10 +17,12 @@ import Feature from '@/components/organisms/Feature.vue'
 
 export default Vue.extend({
   name: 'TestFooter',
+
   components: {
     FooterMenu,
     Feature
   },
+
   computed: {
     menus () {
       return footerMenus
