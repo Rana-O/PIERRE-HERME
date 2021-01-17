@@ -5,22 +5,25 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
+import Vue, { PropType } from 'vue'
 import JournalImage from '@/components/atoms/JournalImage.vue'
 import JournalText from '@/components/atoms/JournalText.vue'
 
-export default {
+export default Vue.extend({
   name: 'JournalItem',
+
   components: {
     JournalImage,
     JournalText
   },
-  props: [
-    'image',
-    'title',
-    'date'
-  ]
-}
+
+  props: {
+    image: String as PropType<string>,
+    title:String as PropType<string>,
+    date: String as PropType<string>
+  }
+})
 </script>
 
 <style scoped>
