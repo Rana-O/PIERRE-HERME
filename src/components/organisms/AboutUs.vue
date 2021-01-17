@@ -9,14 +9,27 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
+import Vue from 'vue'
 import SiteMapTitle from '@/components/atoms/SiteMapTitle.vue'
-export default {
+
+type AboutUsItem = {
+  title: string;
+  link: string;
+}
+
+type DataType = {
+  items: Array<AboutUsItem>;
+}
+
+export default Vue.extend({
   name: 'AboutUs',
+
   components: {
     SiteMapTitle
   },
-  data () {
+
+data (): DataType {
     return {
       items: [
         {title: '会社概要', link: '#1'},
@@ -26,7 +39,7 @@ export default {
       ]
     }
   }
-}
+})
 </script>
 
 <style scoped>
