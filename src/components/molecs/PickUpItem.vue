@@ -5,22 +5,25 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
+import Vue, { PropType } from 'vue'
 import PickUpImage from '@/components/atoms/PickUpImage.vue'
 import PickUpText from '@/components/atoms/PickUpText.vue'
 
-export default {
+export default Vue.extend({
   name:'PickUpItem',
+
   components: {
     PickUpImage,
     PickUpText
   },
-  props: [
-    'image',
-    'pickUpText',
-    'imageTitle'
-  ],
-}
+
+  props: {
+    image: String as PropType<string>,
+    pickUpText: String as PropType<string>,
+    imageTitle: String as PropType<string>
+  }
+})
 </script>
 
 <style scoped>
