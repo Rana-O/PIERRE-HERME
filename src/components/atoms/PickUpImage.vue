@@ -5,14 +5,17 @@
   </div>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import Vue, { PropType } from 'vue'
+
+export default Vue.extend({
   name:'PickUpImage',
-  props: [
-    'image',
-    'imageTitle'
-  ]
-}
+
+  props: {
+    image: String as PropType<string>,
+    imageTitle: String as PropType<string>
+  }
+})
 </script>
 
 <style scoped>

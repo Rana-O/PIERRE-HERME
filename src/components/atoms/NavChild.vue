@@ -9,14 +9,17 @@
   </ul>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import Vue, { PropType } from 'vue'
+
+export default Vue.extend({
   name: 'NavChild',
-  props: [
-    'childFirst',
-    'childSecond'
-  ]
-}
+
+  props: {
+    childFirst: String as PropType<string>,
+    childSecond: String as PropType<string>
+  }
+})
 </script>
 
 <style scoped>

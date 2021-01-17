@@ -5,13 +5,16 @@
   </div>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import Vue, { PropType } from 'vue'
+
+export default Vue.extend({
   name: 'PickUpText',
-  props: [
-    'pickUpText'
-  ]
-}
+
+  props: {
+    pickUpText: String as PropType<string>
+  }
+})
 </script>
 
 <style scoped>

@@ -1,23 +1,21 @@
 <template>
 <div class="guide">
-  <font-awesome-icon class="font-awesome" :icon="iconClassName"></font-awesome-icon>
+  <font-awesome-icon class="font-awesome" :icon="icon"></font-awesome-icon>
   <a>{{ title }}</a>
 </div>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import Vue, { PropType } from 'vue'
+
+export default Vue.extend({
   name: 'Guide',
-  props: [
-    'title',
-    'icon'
-  ],
-  computed: {
-    iconClassName () {
-      return `${this.icon}`
-    }
+
+  props: {
+    title: String as PropType<string>,
+    icon: String as PropType<string>
   }
-}
+})
 </script>
 
 <style scoped>

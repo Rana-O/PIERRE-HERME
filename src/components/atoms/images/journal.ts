@@ -3,9 +3,11 @@ import Journal2 from '@/assets/journal/journal_mac_flavor_202101_sumb.jpg'
 import Journal3 from '@/assets/journal/journal_wind-and-sea-2020_main.jpg'
 import Journal4 from '@/assets/journal/journal_epiphanie-2021_main.jpg'
 
-export default {
+const data = {
   Journal1,
   Journal2,
   Journal3,
   Journal4
 }
+
+export default data

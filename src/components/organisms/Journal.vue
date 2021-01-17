@@ -9,15 +9,17 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
+import Vue from 'vue'
 import JournalItems from '@/components/organisms/JournalItems.vue'
 
-export default {
+export default Vue.extend({
   name:'Journal',
+
   components: {
     JournalItems
   }
-}
+})
 </script>
 
 <style scoped>

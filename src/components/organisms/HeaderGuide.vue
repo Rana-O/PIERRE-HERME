@@ -6,15 +6,17 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
+import Vue from 'vue'
 import Guide from '@/components/atoms/Guide.vue'
 
-export default {
+export default Vue.extend({
   name: 'HeaderGuide',
+
   components: {
       Guide,
   }
-}
+})
 </script>
 
 <style scoped>

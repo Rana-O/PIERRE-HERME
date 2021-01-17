@@ -4,16 +4,29 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
+import Vue from 'vue'
 import Item from '@/components/atoms/Item.vue'
-import { category } from '@/components/atoms/images'
+import { category } from '@/components/atoms/images/index'
 
-export default {
+type Item = {
+  name: string;
+  nameJp: string;
+  link: string;
+}
+
+type DataType = {
+  items: Item[];
+}
+
+export default Vue.extend({
   name: 'CategoryItems',
+
   components: {
     Item
   },
-  data () {
+
+  data (): DataType {
     return {
       items: [
         {name: 'MACARONS', nameJp: 'マカロン', link: category.MacaronIcon },
@@ -31,7 +44,7 @@ export default {
       ]
     }
   }
-}
+})
 </script>
 
 <style scoped>

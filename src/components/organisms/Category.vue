@@ -5,16 +5,19 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
+import Vue from 'vue'
 import Title from '@/components/atoms/Title.vue'
 import CategoryItems from '@/components/organisms/CategoryItems.vue'
-export default {
+
+export default Vue.extend({
   name: 'Category',
+
   components: {
     Title,
     CategoryItems
   }
-}
+})
 </script>
 
 <style scoped>

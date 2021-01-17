@@ -11,7 +11,7 @@ import GiftIcon from '@/assets/item/gift_menu.jpg'
 import ConfectionIcon from '@/assets/item/confectionery.jpg'
 import BookIcon from '@/assets/item/book.jpg'
 
-export default {
+const data = {
   MacaronIcon,
   DrinkIcon,
   PatisserieIcon,
@@ -25,3 +25,5 @@ export default {
   ConfectionIcon,
   BookIcon
 }
+
+export default data

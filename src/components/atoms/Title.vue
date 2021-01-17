@@ -2,13 +2,16 @@
   <h1 class="title">{{ title }}</h1>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import Vue, { PropType } from 'vue'
+
+export default  Vue.extend({
   name: 'Title',
-  props: [
-    'title'
-  ]
-}
+
+  props: {
+    title: String as PropType<string>
+  }
+})
 </script>
 
 <style scoped>

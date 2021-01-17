@@ -8,32 +8,36 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
+import Vue from 'vue'
 import SnsButton from '@/components/atoms/SnsButton.vue'
-import { fab } from '@fortawesome/free-brands-svg-icons'
-export default {
+import { fab, IconDefinition } from '@fortawesome/free-brands-svg-icons'
+
+export default Vue.extend({
   name: 'SnsButtons',
+
   components: {
     SnsButton
   },
+
   computed: {
-    twitterIcon () {
+    twitterIcon (): IconDefinition {
       return fab.faTwitter
     },
-    facebookIcon () {
+    facebookIcon (): IconDefinition {
       return fab.faFacebookF
     },
-    instagramIcon () {
+    instagramIcon (): IconDefinition {
       return fab.faInstagram
     },
-    youtubeIcon () {
+    youtubeIcon (): IconDefinition {
       return fab.faYoutube
     },
-    lineIcon () {
+    lineIcon (): IconDefinition {
       return fab.faLine
     }
   }
-}
+})
 </script>
 
 <style scoped>

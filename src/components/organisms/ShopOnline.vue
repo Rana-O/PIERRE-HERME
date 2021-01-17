@@ -9,17 +9,26 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
+import Vue from 'vue'
 import SiteMapTitle from '@/components/atoms/SiteMapTitle.vue'
-export default {
+
+type ShopOnlineItem = {
+  title: string;
+  link: string;
+}
+
+type DataType = {
+  columns: Array<Array<ShopOnlineItem>>
+}
+
+export default Vue.extend({
   name: 'ShopOnline',
   components: {
     SiteMapTitle
   },
-  props: [
-    'title'
-  ],
-  data () {
+
+data (): DataType {
     const column1 = [
       {title: 'マカロン', link: '#1'},
       {title: 'パティスリー（生ケーキ）', link: '#2'},
@@ -47,7 +56,7 @@ export default {
       ]
     }
   }
-}
+})
 </script>
 
 <style scoped>

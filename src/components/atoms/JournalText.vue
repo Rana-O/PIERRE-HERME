@@ -5,14 +5,17 @@
   </div>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import Vue, { PropType } from 'vue'
+
+export default Vue.extend({
   name: 'JournalText',
-  props: [
-    'title',
-    'date'
-  ]
-}
+
+  props: {
+    title: String as PropType<string>,
+    date: String as PropType<string>
+  }
+})
 </script>
 
 <style scoped>

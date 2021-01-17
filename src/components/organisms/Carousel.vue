@@ -19,18 +19,19 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
+import Vue from 'vue'
 import VueSlickCarousel from 'vue-slick-carousel'
 import 'vue-slick-carousel/dist/vue-slick-carousel.css'
-// optional style for arrows & dots
 import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
 
-export default {
+export default Vue.extend({
   name: 'Carousel',
+
   components: {
     VueSlickCarousel
   }
-}
+})
 </script>
 
 <style scoped>

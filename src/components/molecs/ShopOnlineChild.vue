@@ -4,16 +4,27 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
+import Vue from 'vue'
 import Item from '@/components/atoms/Item.vue'
 import { header } from '@/components/atoms/images'
 
-export default {
+type ShopOnlineChildItem = {
+  name: string;
+  nameJp: string;
+  icon: string;
+}
+
+type DataType = {
+  items: Array<ShopOnlineChildItem>;
+}
+
+export default Vue.extend({
   name: 'ShopOnlineChild',
   components: {
     Item
   },
-  data () {
+  data (): DataType {
     return {
       items: [
         {name: 'MACARONS', nameJp: 'マカロン', icon: header.MacaronIcon },
@@ -26,7 +37,7 @@ export default {
       ]
     }
   }
-}
+})
 </script>
 
 <style scoped>

@@ -6,19 +6,21 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
+import Vue from 'vue'
 import RecommendItems from '@/components/organisms/RecommendItems.vue'
 import Title from '@/components/atoms/Title.vue'
 import ArrowButton from '@/components/atoms/ArrowButton.vue'
 
-export default {
+export default Vue.extend({
   name: 'Recommend',
+
   components: {
     RecommendItems,
     Title,
     ArrowButton
   }
-}
+})
 </script>
 
 <style scoped>

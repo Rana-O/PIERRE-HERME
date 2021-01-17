@@ -9,14 +9,28 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
+import Vue from 'vue'
 import SiteMapTitle from '@/components/atoms/SiteMapTitle.vue'
-export default {
+import { Column } from '@/components/atoms/data/footer-menus'
+
+type BoutiquesItem = {
+  title: string;
+  link: string;
+}
+
+type DataType = {
+  columns:Array<Array<BoutiquesItem>>;
+}
+
+export default Vue.extend({
   name: 'Boutiques',
+
   components: {
     SiteMapTitle
   },
-  data () {
+
+  data () :DataType {
     const column1 = [
       {title: 'TOKYO AOYAMA', link: '#1'},
       {title: 'Heaven', link: '#2'},
@@ -46,7 +60,7 @@ export default {
       ]
     }
   }
-}
+})
 </script>
 
 <style scoped>

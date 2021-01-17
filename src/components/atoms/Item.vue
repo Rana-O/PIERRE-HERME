@@ -10,15 +10,18 @@
   </div>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import Vue, { PropType } from 'vue'
+
+export default Vue.extend({
   name: 'Item',
-  props: [
-    'itemName',
-    'itemNameJp',
-    'image'
-  ]
-}
+
+  props: {
+    itemName: String as PropType<string>,
+    itemNameJp: String as PropType<string>,
+    image: String as PropType<string>
+  }
+})
 </script>
 
 <style scoped>
