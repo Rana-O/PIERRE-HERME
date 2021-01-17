@@ -2,20 +2,23 @@
   <div class="nav-item">
     <a>
       <p>{{ navItem }}</p>
-      <p>{{ navItem_jp}}</p>
+      <p>{{ navItemJp}}</p>
     </a>
     <slot></slot>
   </div>
 </template>
 
-<script>
-export default {
+<script lang ="ts">
+import Vue, { PropType } from 'vue'
+
+export default Vue.extend({
   name: 'NavItem',
-  props:[
-    'navItem',
-    'navItem_jp'
-  ]
-}
+
+  props:{
+    navItem: String as PropType<string>,
+    navItemJp: String as PropType<string>
+  }
+})
 </script>
 
 <style scoped>
