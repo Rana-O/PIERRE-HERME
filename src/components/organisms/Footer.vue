@@ -6,19 +6,21 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
+import Vue from 'vue'
 import FooterGuide from '@/components/organisms/FooterGuide.vue'
 import SiteMap from '@/components/organisms/SiteMap.vue'
 import FooterUnder from '@/components/organisms/FooterUnder.vue'
 
-export default {
+export default Vue.extend({
   name: 'Footer',
-  components: {
+
+components: {
     FooterGuide,
     SiteMap,
     FooterUnder
   }
-}
+})
 </script>
 
 <style scoped>
