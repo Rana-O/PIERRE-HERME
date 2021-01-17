@@ -11,15 +11,18 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
+import Vue from 'vue'
 import ShopOnline from '@/components/organisms/ShopOnline.vue'
 import ShoppingGuide from '@/components/organisms/ShoppingGuide.vue'
 import Feature from '@/components/organisms/Feature.vue'
 import OurBrand from '@/components/organisms/OurBrand.vue'
 import AboutUs from '@/components/organisms/AboutUs.vue'
 import Boutiques from '@/components/organisms/Boutiques.vue'
-export default {
+
+export default Vue.extend({
   name: 'SiteMap',
+
   components: {
     ShopOnline,
     ShoppingGuide,
@@ -28,8 +31,7 @@ export default {
     AboutUs,
     Boutiques
   }
-
-}
+})
 </script>
 
 <style scoped>
