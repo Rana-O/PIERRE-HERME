@@ -6,13 +6,15 @@
   </div>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import Vue, { PropType } from 'vue'
+export default Vue.extend({
   name: 'SnsButton',
-  props: [
-    'icon'
-  ]
-}
+
+  props: {
+    icon: String as PropType<string>
+  }
+})
 </script>
 
 <style scoped>
