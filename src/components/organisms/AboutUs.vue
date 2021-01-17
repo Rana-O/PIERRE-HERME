@@ -29,7 +29,7 @@ export default Vue.extend({
     SiteMapTitle
   },
 
-data (): DataType {
+  data (): DataType {
     return {
       items: [
         {title: '会社概要', link: '#1'},

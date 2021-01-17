@@ -12,7 +12,7 @@
 <script lang="ts">
 import Vue from 'vue'
 import SiteMapTitle from '@/components/atoms/SiteMapTitle.vue'
-import { Column } from '../atoms/data/footer-menus'
+import { Column } from '@/components/atoms/data/footer-menus'
 
 type BoutiquesItem = {
   title: string;
