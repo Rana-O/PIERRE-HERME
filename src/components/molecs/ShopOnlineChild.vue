@@ -15,7 +15,7 @@ type ShopOnlineChildItem = {
   icon: string;
 }
 
-type DateType = {
+type DataType = {
   items: Array<ShopOnlineChildItem>;
 }
 
@@ -24,7 +24,7 @@ export default Vue.extend({
   components: {
     Item
   },
-  data (): DateType {
+  data (): DataType {
     return {
       items: [
         {name: 'MACARONS', nameJp: 'マカロン', icon: header.MacaronIcon },

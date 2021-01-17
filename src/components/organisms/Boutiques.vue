@@ -19,7 +19,7 @@ type BoutiquesItem = {
   link: string;
 }
 
-type DateType = {
+type DataType = {
   columns:Array<Array<BoutiquesItem>>;
 }
 
@@ -30,7 +30,7 @@ export default Vue.extend({
     SiteMapTitle
   },
 
-  data () :DateType {
+  data () :DataType {
     const column1 = [
       {title: 'TOKYO AOYAMA', link: '#1'},
       {title: 'Heaven', link: '#2'},
