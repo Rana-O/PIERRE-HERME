@@ -13,18 +13,21 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
+import Vue from 'vue'
 import Button from '@/components/atoms/Button.vue'
 import SnsButtons from '@/components/organisms/SnsButtons.vue'
 import FooterNav from '@/components/organisms/FooterNav.vue'
-export default {
+
+export default Vue.extend({
   name: 'FooterUnder',
+
   components: {
     Button,
     SnsButtons,
     FooterNav
   }
-}
+})
 </script>
 
 <style scoped>
